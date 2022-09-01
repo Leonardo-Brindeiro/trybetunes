@@ -7,6 +7,7 @@ import ProfileEdit from './pages/ProfileEdit';
 import Search from './pages/Search';
 import Album from './pages/Album';
 import NotFound from './pages/NotFound';
+
 // mentoria andré
 class App extends React.Component {
   render() {
