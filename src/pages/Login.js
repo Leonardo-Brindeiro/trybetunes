@@ -34,7 +34,7 @@ class Login extends Component {
     }
   };
 
-  handleClick = () => {
+  botãoClick = () => {
     const { username } = this.state;
     this.setState({ loading: true }, async () => {
       await createUser({ name: username });
@@ -55,11 +55,11 @@ class Login extends Component {
             onChange={ this.mudandoBotao }
             value={ username }
           />
-          <button
+          <button // esse é um quadradinho que serve ded botao
             type="button"
             data-testid="login-submit-button"
             disabled={ disabled }
-            onClick={ this.handleClick }
+            onClick={ this.botãoClick } // coloquei um click que vai receber a minha função botão click acima
           >
             Entrar
           </button>
