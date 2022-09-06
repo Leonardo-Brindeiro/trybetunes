@@ -19,13 +19,9 @@ class Header extends Component { // ajuda da cris
     const { name, loading } = this.state;
     return (loading ? <Loading /> // se não for loading carrega os meus loads se não passa pros nomes
       : (
-
         <header>
-          <p data-testid="header-user-name">{name}</p>
-          <div
-            data-testid="header-component"
-          />
-          <nav>
+          <div data-testid="header-component">
+            <p data-testid="header-user-name">{name}</p>
             <button type="button">
               <Link to="/search" data-testid="link-to-search">Search</Link>
             </button>
@@ -35,7 +31,7 @@ class Header extends Component { // ajuda da cris
             <button type="button">
               <Link to="/profile" data-testid="link-to-profile">Profile</Link>
             </button>
-          </nav>
+          </div>
         </header>)
 
     );
