@@ -40,17 +40,17 @@ class Album extends Component {
         <h2 data-testid="artist-name">
           {cantor}
         </h2>
-        {music.map((e, i) => (<MusicCard
+        {music.map((m, i) => (<MusicCard
           key={ i }
-          music={ e.trackName } // o meu objeto vai ser o e
-          player={ e.previewUrl }
-          trackId={ e.trackId }
-          favoritas={ e }
+          trackName={ m.trackName } // o meu objeto vai ser o e
+          previewUrl={ m.previewUrl }
+          trackId={ m.trackId }
+          favoritas={ m }
         />))}
       </div>
     );
   }
-}
+}// Ajuda do italo
 Album.propTypes = { // ajuda mentoria o shape é a tipagem do objeto
   match: PropTypes.shape({
     params: PropTypes.shape({
