@@ -15,10 +15,10 @@ class Search extends Component {
     vazio: false,
   }; // passando o estado
 
-  onInputChange = ({ target }) => {
+  onInputChange = ({ target }) => { // recebendo o evento de digitar que vai ter o valor que o usuario esta digitando
     this.setState({
       [target.name]: target.value,
-    }, this.checkInput);
+    }, this.checkInput); // sem essa função eu não consigo digitar nada no meu input
   };
 
   searchAlbum = async () => {
